@@ -290,7 +290,7 @@ g('jout').onclick=function(){run=0;gen++;clearInterval(tmr);box.classList.remove
 g('jfx').onclick=function(){box.classList.toggle('lite');fx()};
 g('jre').onclick=function(){box.classList.add('on');ini()};
 /* ---------- Modo administrador: abre la página con #admin al final del link ---------- */
-var ADMIN_EMAIL='TU_CORREO@gmail.com';/* el mismo correo que pusiste en las reglas de Firebase */
+var ADMIN_EMAIL='real5beb@gmail.com';/* el mismo correo que pusiste en las reglas de Firebase */
 function admRend(a){g('jalist').innerHTML=a.length?a.map(function(r,i){return '<li><span>'+(i+1)+'. '+esc(r.name)+' · '+esc(r.grp)+' · '+esc(r.score)+'</span><button type="button" class="jmini" data-id="'+esc(r.id)+'">🗑 Eliminar</button></li>'}).join(''):'<li>No hay puntajes.</li>'}
 function admLoad(){top().then(admRend).catch(function(){g('jast').textContent='No se pudo cargar la lista.'})}
 if(location.hash==='#admin')g('jadm').hidden=false;
