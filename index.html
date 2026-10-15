@@ -199,7 +199,7 @@ footer{background:var(--ink);color:#fff;padding:44px 0;text-align:center}footer 
 <button id="vb" type="button" aria-label="Ver videos de Satay Pop" aria-expanded="false" aria-controls="vp">▶</button><div id="vp" role="dialog" aria-label="Videos de Satay Pop" hidden><div class="vh"><span>Mira cómo lo hacemos</span><button id="vx" type="button" aria-label="Cerrar">✕</button></div><div id="vbox"></div><div id="vtabs"></div></div>
 <script>
 // Para recibir respuestas de otras personas pega aquí la URL de tu formulario (Formspree, etc.). Vacío = se guardan solo en este navegador.
-var ENDPOINT="https://formspree.io/f/xoejkgqo";
+var ENDPOINT="https://api.web3forms.com/submit";
 var ar=document.getElementById('areas'),q2=document.getElementById('q2');
 ["Contabilidad y Finanzas","Marketing y Servicio al Cliente","Costos de Producción","Manejo de Inventarios y de Almacén","Logística","Compras de Materiales"].forEach(function(k){var li=document.createElement('li');li.textContent=k;ar.appendChild(li);
 var l=document.createElement('label');l.innerHTML='<input type="radio" name="q2" required><span></span>';l.firstChild.value=k;l.lastChild.textContent=k;q2.appendChild(l)});
